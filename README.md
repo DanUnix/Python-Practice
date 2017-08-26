@@ -1,5 +1,4 @@
-# PythonMergeSort
-Practicing Algorithms
+Practicing Algorithms and Data Structures
 
 
 # merge_sort.py
