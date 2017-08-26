@@ -46,6 +46,7 @@ def merge(arr, l, m, r):
         arr[k] = left[i]
         i += 1
         k += 1
+
     # Copy remaining elements from right[n2] temporary list if there are any
     while j < n2:
         arr[k] = right[j]
@@ -62,7 +63,8 @@ def merge(arr, l, m, r):
 def merge_sort(arr, l, r):
     # if l < r then perform merge_sort operation
     if l < r:
-        mid = (l+r) / 2             # Get middle index of given list arr
+        #mid = (l+r) / 2            # Get middle index of given list arr
+        mid = l + (r-l) / 2         # Same as (l+r)/2 but works for larger list so an overflow won't occur
         merge_sort(arr, l, mid)     # Run mergesort on left half of arr
         merge_sort(arr, mid+1, r)   # Run mergesort on right half of arr
         merge(arr, l, mid, r)       # merge subarrays in sorted order
