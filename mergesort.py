@@ -13,7 +13,7 @@ import random
 #               r = right index of list
 def merge(arr, l, m, r):
     n1 = m - l + 1      # get number of elements to the left of middle index -> arr[l..m]
-    n2 = r -m           # get number of elements to the right of middle index -> arr[mid+1..r]
+    n2 = r - m           # get number of elements to the right of middle index -> arr[mid+1..r]
 
     # Create two temporary list of size n1 and n2 respectively
     left = [0] * (n1)
